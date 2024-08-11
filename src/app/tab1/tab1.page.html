@@ -3,6 +3,11 @@
     <ion-title>
       Tab 1
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-toggle>
+        <ion-button>Open Menu</ion-button>
+      </ion-menu-toggle>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -12,6 +17,9 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-button (click)="takePicture()">
+    Take Picture
+  </ion-button>
+  <ion-img [src]="imageSrc"></ion-img>
 </ion-content>
